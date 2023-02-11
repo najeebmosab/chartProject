@@ -32,8 +32,8 @@ buildContinents();
 async function getDataByContinents(nameContinent) {
     chartJs.style.display = "none";
     h2.innerText = "";
-    document.querySelector("#myChart2").style.display= "none";
-    document.querySelector("#myChart").style.display= "none";
+    document.querySelector("#myChart2").style.display = "none";
+    document.querySelector("#myChart").style.display = "none";
     chartJs2.style.display = "none";
     divButton.style.display = "none";
     spinerDiv.style.display = "flex";
@@ -60,9 +60,11 @@ async function getDataByContinents(nameContinent) {
                     backgroundColorsForChartsJs.push(backgroundColors[rnd]);
                     borderColorsForChartsJs.push(borderColors[rnd]);
                 });
-
-                chartJs.style.display = "block";
-                chartJsButton.style.display = "block";
+                chartJs2.style.display = "none"
+                chartJs.style.display = "block"
+                spinerDiv.style.display = "none";
+                document.querySelector("#myChart2").style.display = "block";
+                document.querySelector("#myChart").style.display = "block";
                 setConfig();
                 setButtonInSection();
 
@@ -72,15 +74,15 @@ async function getDataByContinents(nameContinent) {
                 chartJs.style.display = "none";
                 chartJs2.style.display = "none";
             }
-            spinerDiv.style.display = "none";
-
+            
         } catch (err) {
             console.log(new Error("the link not worke"));
             h2.innerText = "No data found";
             chartJs.style.display = "none";
             chartJs2.style.display = "none";
         }
-        chartJs.style.display = "block"
+        
+        spinerDiv.style.display = "none";
         divButton.style.display = "block"
 
     }, 5000)
@@ -169,8 +171,8 @@ divButton.addEventListener("click", (event) => {
 async function getDataCity(country) {
     h2.innerText = "";
     chartJs.style.display = "none";
-    document.querySelector("#myChart2").style.display= "none";
-    document.querySelector("#myChart").style.display= "none";
+    document.querySelector("#myChart2").style.display = "none";
+    document.querySelector("#myChart").style.display = "none";
     chartJs2.style.display = "none";
     divButton.style.display = "none";
     spinerDiv.style.display = "flex";
@@ -217,15 +219,18 @@ async function getDataCity(country) {
             console.log(arrDate);
             // console.log(arrCountries);
             // console.log(arrPopulationCountries);
+            chartJs2.style.display = "block"
+            document.querySelector("#myChart2").style.display = "block";
+            document.querySelector("#myChart").style.display = "block";
             setConfigCity();
         } catch (err) {
             console.log(err);
             chartJs.style.display = "none";
             chartJs2.style.display = "none";
         }
-        chartJs2.style.display = "block"
-        divButton.style.display = "block"
         spinerDiv.style.display = "none";
+        divButton.style.display = "block"
+
 
     }, 2000)
 }
