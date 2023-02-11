@@ -73,4 +73,6 @@ flex-wrap: wrap;
 /* ------------------------------------ */
 #myChart2{
     cursor: pointer;
+    width: 80%;
+    margin: auto;
 }
