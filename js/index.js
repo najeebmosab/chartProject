@@ -67,12 +67,15 @@ async function getDataByContinents(nameContinent) {
             else {
                 h2.innerText = "No data found";
                 chartJs.style.display = "none";
+                chartJs2.style.display = "none";
             }
             spinerDiv.style.display = "none";
 
         } catch (err) {
             console.log(new Error("the link not worke"));
             h2.innerText = "No data found";
+            chartJs.style.display = "none";
+            chartJs2.style.display = "none";
         }
         chartJs.style.display = "block"
         divButton.style.display = "block"
@@ -211,6 +214,8 @@ async function getDataCity(country) {
             setConfigCity();
         } catch (err) {
             console.log(err);
+            chartJs.style.display = "none";
+            chartJs2.style.display = "none";
         }
         chartJs2.style.display = "block"
         divButton.style.display = "block"
