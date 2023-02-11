@@ -69,3 +69,8 @@ flex-wrap: wrap;
         flex-direction: column;
     }
 }
+
+/* ------------------------------------ */
+#myChart2{
+    cursor: pointer;
+}

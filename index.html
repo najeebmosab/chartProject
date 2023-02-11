@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/spiner.css">
     <link rel="stylesheet" href="/css/index.css">
+
 </head>
 
 <body>
+
     <section id="startProject">
         <h2>World Population</h2>
         <div class="continentsContainer">
@@ -17,17 +20,30 @@
         </div>
         <h2 id="errormsg"></h2>
     </section>
+    <section id="spiner">
+        <div id="spinerDiv">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
     <section id="chartJs">
         <div>
             <canvas id="myChart"></canvas>
         </div>
     </section>
 
-    <section id="chartJsButton" >
-        <div id="divButton" class="btnDiv">
-           
+    <section id="chartJs2">
+        <div>
+            <canvas id="myChart2"></canvas>
         </div>
     </section>
+    <section id="chartJsButton">
+        <div id="divButton" class="btnDiv">
+
+        </div>
+    </section>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script src="/js/index.js"></script>
