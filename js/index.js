@@ -31,6 +31,7 @@ buildContinents();
 
 async function getDataByContinents(nameContinent) {
     chartJs.style.display = "none";
+    h2.innerText = "";
     chartJs2.style.display = "none";
     divButton.style.display = "none";
     spinerDiv.style.display = "flex";
@@ -164,6 +165,7 @@ divButton.addEventListener("click", (event) => {
 });
 
 async function getDataCity(country) {
+    h2.innerText = "";
     chartJs.style.display = "none";
     chartJs2.style.display = "none";
     divButton.style.display = "none";
