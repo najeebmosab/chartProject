@@ -71,6 +71,10 @@ flex-wrap: wrap;
 }
 
 /* ------------------------------------ */
+#chartJs2{
+    width: 80%;
+    margin: auto;
+}
 #myChart2{
     cursor: pointer;
     width: 80%;
