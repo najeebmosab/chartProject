@@ -65,6 +65,8 @@ async function getDataByContinents(nameContinent) {
                 spinerDiv.style.display = "none";
                 document.querySelector("#myChart2").style.display = "block";
                 document.querySelector("#myChart").style.display = "block";
+                divButton.style.display = "block"
+
                 setConfig();
                 setButtonInSection();
 
@@ -74,16 +76,15 @@ async function getDataByContinents(nameContinent) {
                 chartJs.style.display = "none";
                 chartJs2.style.display = "none";
             }
-            
+
         } catch (err) {
             console.log(new Error("the link not worke"));
             h2.innerText = "No data found";
             chartJs.style.display = "none";
             chartJs2.style.display = "none";
         }
-        
+
         spinerDiv.style.display = "none";
-        divButton.style.display = "block"
 
     }, 5000)
 
